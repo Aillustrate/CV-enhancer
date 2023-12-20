@@ -1,8 +1,8 @@
-Hello! How I can improve my Curriculum Vitae (surrounded by the <cv> tags) to apply for the job (surrounded by the <job> tags)?
+User: Hello! How I can improve my Curriculum Vitae (surrounded by the <cv> tags) to apply for the job (surrounded by the <job> tags)?
 
-Curriculum Vitae: 
+Curriculum Vitae:
 <cv> {cv} </cv>
 
 
-Job Description: 
+Job Description:
 <job> {job} </job>
