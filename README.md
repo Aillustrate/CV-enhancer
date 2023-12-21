@@ -43,7 +43,7 @@ We condacted the experiments with both models changing the following generation 
 - **do_sample** is a parameter that determines the sampling strategy (selection of the next token) during the generation. If do_sample=True, then generation method will use Sample Decoding and it gives the opportunity to play with the temperature parameter. If do_sample=False, then generation method will use greedy decoding.
 - **temperature** is one of the key parameters of generation. The more temperature is, the model will use more "creativity", and the less temperature instruct model to be "less creative", but following your prompt stronger.
 
-The results of evaluation the performance of the models were as follows:
+**The results of evaluation the performance of the models were as follows:**
 
 | model     |	do_sample | temperature	| adequacy | reliability | usefulness |	honesty |	linguistic correctness | coherence |
 | --------- |	--------- | ----------	| -------- | ----------- | ---------- |	------- |	---------------------- | --------- |
@@ -52,7 +52,7 @@ The results of evaluation the performance of the models were as follows:
 |Mistral-7B |	False     | 1.00      	| 3.67     | 4.33        | 3.33       |	4.67    |	5.00                   | 4.00      |
 |Mistral-7B |	True      | 1.00      	| 3.50     | 4.00        | 4.00       |	5.00    |	5.00                   | 5.00      |
 
-
+In general, we can say that in our case the accuracy and adequacy of the model answers are more important than creativity so the better results were achieved with the lower values of the temperature parameter. If we compare all the metrics of models with all combinations of parameters, we can say that, according to our estimates, Llama-2-7b model with greedy decoding copes best with the task.
 
 <a name="structure"></a>
 ### Structure of repository
