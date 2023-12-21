@@ -52,7 +52,26 @@ We condacted the experiments with both models changing the following generation 
 |Mistral-7B |	False     | 1.00      	| 3.67     | 4.33        | 3.33       |	4.67    |	5.00                   | 4.00      |
 |Mistral-7B |	True      | 1.00      	| 3.50     | 4.00        | 4.00       |	5.00    |	5.00                   | 5.00      |
 
-In general, we can say that in our case the accuracy and adequacy of the model answers are more important than creativity so the better results were achieved with the lower values of the temperature parameter. If we compare all the metrics of models with all combinations of parameters, we can say that, according to our estimates, Llama-2-7b model with greedy decoding copes best with the task.
+In general, we can say that in our case the accuracy and adequacy of the model answers are more important than creativity so the better results were achieved with the lower values of the temperature parameter. If we compare all the metrics of models with all combinations of parameters, we can say that, according to our estimates, **Llama-2-7b model with greedy decoding copes best with the task**.
 
 <a name="structure"></a>
 ### Structure of repository
+```
+├── data
+│   ├── CVs -- CVs parsed from hh.ru
+│   └── Vacancies -- Vacancies parsed from hh.ru
+│
+├── notebooks
+│   ├── evaluation.ipynb -- notebook to evaluate model answers
+│   └── generation.ipynb -- notebook to generate model answers
+│
+├── prompts
+│   ├── system_prompt.txt -- system prompt for the models
+│   └── user_prompt.txt -- potential user prompt for generation
+│
+└── src
+    ├── enhancer.py -- script for generation the enhancement for CV
+    ├── evaluator.py -- script for evaluation of the model answers
+    ├── pipeline.py -- script for experiment pipeline on all the CVs
+    └── utils.py -- script for data preprocessing
+```
