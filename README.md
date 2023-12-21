@@ -39,6 +39,12 @@ resulting text a score from 0 to 5 according to the following criteria:
 
 <a name="results"></a>
 ### Results
+We condacted the experiments with both models changing the following generation parameters: do_sample and temperature.
+- **do_sample** is a parameter that determines the sampling strategy (selection of the next token) during the generation. If do_sample=True, then generation method will use Sample Decoding and it gives the opportunity to play with the temperature parameter. If do_sample=False, then generation method will use greedy decoding.
+- **temperature** is one of the key parameters of generation. The more temperature is, the model will use more "creativity", and the less temperature instruct model to be "less creative", but following your prompt stronger.
+
+The results of evaluation the performance of the models were as follows:
+
 
 <a name="structure"></a>
 ### Structure of repository
