@@ -52,6 +52,8 @@ We condacted the experiments with both models changing the following generation 
 |Mistral-7B |	False     | 1.00      	| 3.67     | 4.33        | 3.33       |	4.67    |	5.00                   | 4.00      |
 |Mistral-7B |	True      | 1.00      	| 3.50     | 4.00        | 4.00       |	5.00    |	5.00                   | 5.00      |
 
+All of this metrics are averaged across all model answers and all team members who were involved in the assessment. There are only the best metric sets and all of the metrics are available in this [notebook](notebooks/evaluation.ipynb)
+
 In general, we can say that in our case the accuracy and adequacy of the model answers are more important than creativity so the better results were achieved with the lower values of the temperature parameter. If we compare all the metrics of models with all combinations of parameters, we can say that, according to our estimates, **Llama-2-7b model with greedy decoding copes best with the task**.
 
 <a name="structure"></a>
