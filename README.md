@@ -45,6 +45,14 @@ We condacted the experiments with both models changing the following generation 
 
 The results of evaluation the performance of the models were as follows:
 
+| model     |	do_sample | temperature	| adequacy | reliability | usefulness |	honesty |	linguistic correctness | coherence |
+| --------- |	--------- | ----------	| -------- | ----------- | ---------- |	------- |	---------------------- | --------- |
+|Llama-2-7b |	False     | 1.00      	| 4.75     | 4.25        | 4.50       |	5.00    |	5.00                   | 4.00      |
+|Llama-2-7b |	True      | 1.25      	| 2.83     | 4.33        | 2.50       |	5.00    |	5.00                   | 4.83      |
+|Mistral-7B |	False     | 1.00      	| 3.67     | 4.33        | 3.33       |	4.67    |	5.00                   | 4.00      |
+|Mistral-7B |	True      | 1.00      	| 3.50     | 4.00        | 4.00       |	5.00    |	5.00                   | 5.00      |
+
+
 
 <a name="structure"></a>
 ### Structure of repository
