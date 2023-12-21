@@ -9,7 +9,10 @@ honestly tell about that and suggest what the user might need.
 **Table of Contents**
 - [Experiments](#experiments)
   - [Dataset](#dataset)
+  - [Models](#models)
+  - [Metrics](#metrics)
   - [Results](#results)
+- [Structure of repository](#structure)
 
 <a name="experiments"></a>
 ## Experiments
@@ -36,3 +39,6 @@ resulting text a score from 0 to 5 according to the following criteria:
 
 <a name="results"></a>
 ### Results
+
+<a name="structure"></a>
+### Structure of repository
