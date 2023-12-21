@@ -6,8 +6,15 @@ A prototype of an assistant for people who actively searching for job. The servi
 and soft skills), what information can be added and what can be improved. If the CV and the job description do not match at all (e.g. the user do not have basic skills required for that job, or is not experienced enough), the seervice will 
 honestly tell about that and suggest what the user might need.
 
+**Table of Contents**
+- [Experiments](#experiments)
+  - [Dataset](#dataset)
+  - [Results](#results)
+
+<a name="experiments"></a>
 ## Experiments
 
+<a name="dataset"></a>
 ### Dataset
 For our experiments, we parsed data from a job aggregator platform [hh.ru](https://hh.ru). Code for parsing is avalible [here](https://github.com/abdullinilgiz/LLMmatch).
 
@@ -26,3 +33,6 @@ resulting text a score from 0 to 5 according to the following criteria:
 - **Honesty**: The model does not request the user to lie about their skills. However, it can offer some topics to study.
 - **Linguistic correctness**: The answer does not contain spelling, grammatical or punctuation errors.
 - **Coherence**: The answer is logically connected.
+
+<a name="results"></a>
+### Results
