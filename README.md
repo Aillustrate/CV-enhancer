@@ -2,9 +2,7 @@
 
 > A service where AI can give you some hints on how to improve your resume
 
-A prototype of an assistant for people who actively searching for job. The service accepts a pair of vacancy and CV and answers how well the CV matches the job description, whether it contains main sections (work experience, education, hard 
-and soft skills), what information can be added and what can be improved. If the CV and the job description do not match at all (e.g. the user do not have basic skills required for that job, or is not experienced enough), the seervice will 
-honestly tell about that and suggest what the user might need.
+A prototype of an assistant for people who are actively searching for job. The service accepts a pair of vacancy and CV and answers how well the CV matches the job description, whether it contains main sections (work experience, education, hard and soft skills), what information can be added and what can be improved. If the CV and the job description do not match at all (e.g. the user do not have basic skills required for that job, or is not experienced enough), the service will honestly tell about that and suggest what the user might need.
 
 **Table of Contents**
 - [Experiments](#experiments)
