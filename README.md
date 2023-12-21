@@ -18,11 +18,11 @@ source and do not require payment to use. In addition, both of these models perf
 
 ### Metrics
 Due to the fact that the result that the LLMs give as back is the plain text, the is no other way to evaluate the performance of the models other than human effort. So we decided to develop your own assessment methodology and give each 
-resulting text a score from 0 to 5 according to the following criterias:
+resulting text a score from 0 to 5 according to the following criteria:
 
-- Adequacy: The model adequately assesses the suitability of the CV for the job description. If the CV does not suit the vacancy at all, it says so directly.
-- Credibility (reliability): The model does not operate on information that is not in the job description/CV.
-- Usefulness: The answer is not made up of obvious things. The model gives really valuable advices on the topics that the user can study or how to reformulate the CV for better match with the jobs description.
-- Honesty: The model does not request the user to lie about their skills. However, it can offer some topics to study.
-- Linguistic correctness: The answer does not contain spelling, grammatical or punctuation errors.
-- Coherence: The answer is logically connected.
+- **Adequacy**: The model adequately assesses the suitability of the CV for the job description. If the CV does not suit the vacancy at all, it says so directly.
+- **Reliability**: The model does not operate on information that is not in the job description/CV.
+- **Usefulness**: The answer is not made up of obvious things. The model gives really valuable advices on the topics that the user can study or how to reformulate the CV for better match with the jobs description.
+- **Honesty**: The model does not request the user to lie about their skills. However, it can offer some topics to study.
+- **Linguistic correctness**: The answer does not contain spelling, grammatical or punctuation errors.
+- **Coherence**: The answer is logically connected.
