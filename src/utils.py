@@ -51,16 +51,16 @@ def load_or_create_json(json_path):
 
 
 def save_matches(
-        job,
-        matches_dir="LLMmatch/data/matches",
-        guidelines_path="evaluation/guidelines.json",
-        urls_path="evaluation/urls.json",
+    job,
+    matches_dir="LLMmatch/data/matches",
+    guidelines_path="evaluation/guidelines.json",
+    urls_path="evaluation/urls.json",
 ):
     guideline_dict = load_or_create_json(guidelines_path)
     urls_dict = load_or_create_json(urls_path)
     matches_path = os.path.join(matches_dir, f"{job}.txt")
     cv, vacancies, guidelines, urls = parse_matches(matches_path)
-    cv_path = os.path.join("data", "CVs", f"{job}.txt")
+    cv_path = os.path.join("..", "data", "CVs", f"{job}.txt")
     vacancy_dir = os.path.join("data", "Vacancies", job)
     os.makedirs(vacancy_dir, exist_ok=True)
     with open(cv_path, "w") as f:
