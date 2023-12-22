@@ -52,9 +52,9 @@ def load_or_create_json(json_path):
 
 def save_matches(
     job,
-    matches_dir="LLMmatch/data/matches",
-    guidelines_path="evaluation/guidelines.json",
-    urls_path="evaluation/urls.json",
+    matches_dir="../LLMmatch/data/matches",
+    guidelines_path="../evaluation/guidelines.json",
+    urls_path="../evaluation/urls.json",
 ):
     guideline_dict = load_or_create_json(guidelines_path)
     urls_dict = load_or_create_json(urls_path)

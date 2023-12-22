@@ -10,10 +10,10 @@ from src.utils import load_or_create_json
 class Evaluator:
     def __init__(
             self,
-            report_path="evaluation/report.json",
-            eval_dir="evaluation/results",
-            guidelines_path="evaluation/guidelines.json",
-            urls_path="evaluation/urls.json",
+            report_path="../evaluation/report.json",
+            eval_dir="../evaluation/results",
+            guidelines_path="../evaluation/guidelines.json",
+            urls_path="../evaluation/urls.json",
             shuffle=True,
     ):
         self.annotator = input("Enter your name")
