@@ -54,10 +54,10 @@ All of this metrics are averaged across all model answers and all team members w
 In general, we can say that in our case the accuracy and adequacy of the model answers are more important than creativity so the better results were achieved with the lower values of the temperature parameter. If we compare all the metrics of models with all combinations of parameters, we can say that, according to our estimates, **Llama-2-7b model with greedy decoding copes best with the task**.
 
 
-🌏 Scaling prospects
+### 🌏 Scaling prospects
 Currently, there is only an independent server. But there was also a scaling potential for the project. It can be used as a worker in services such as k8s or docker-compose. You will need to write a docker container. Please use a load balancer (e.g. nginx) to distribute incoming connections between workers. In this case, the service scales horizontally almost indefinitely, including to different geolocation servers.
 
-🔥 Performance evaluation
+### 🔥 Performance evaluation
 All measurements were performed on the following configuration: Intel(R) Xeon(R) E5-2698 v3 processor with a frequency of 2.30 GHz. Number of cores available: 8. Available memory: 32 GB. Memory frequency: 2133 GHz. But the execution on the processor is currently very slow because it is not optimized for 32-bit numbers. Please use a GPU, for example, a 3090, as in our laboratory. Then the response generation will take about 20 seconds on average. This is not suitable for use on mobile devices, but it can still be deployed in data centers.
 
 We got the following results: RAM usage: no more than 1 GB (typical consumption is around 200 MB). Performance: 8 frames per second. This result shows good performance - the service, being deployed on a mid-segment mobile device using a built-in GPU, is capable of processing video at 8-16 frames per second.
